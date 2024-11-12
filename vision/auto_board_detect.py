@@ -13,7 +13,7 @@ lk_params = dict(winSize=(15, 15), maxLevel=2, criteria=(cv2.TERM_CRITERIA_EPS |
 # Initialize video capture (0 is the default camera, adjust if necessary)
 video_path = './chessvid_flipped.mp4'
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(video_path)
 
 if not cap.isOpened():
     print("Error: Could not open video stream")
